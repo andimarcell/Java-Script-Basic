@@ -15,14 +15,14 @@
 //     console.log("Angka lebih kecil dari 0.5");
 // }
 
-const iniHari = prompt('Isikan hari!').toLowerCase();
+const iniHari = prompt('kamu sayang aku ga').toLowerCase();
 
-if(iniHari === 'senin') {
-    console.log("Selamat bekerja kawan!")
-} else if (iniHari === 'sabtu') {
-    console.log('Semoga jangan cepat berlalu!');
+if(iniHari === 'iya') {
+    alert("aku juga sayang kamu :)")
+} else if (iniHari === 'ga') {
+    alert('jawab iya napa');
 } else {
-    console.log('Yah biasa aja');
+    alert('jawab iya atau ga');
 }
 
 // const nilai = '40';
