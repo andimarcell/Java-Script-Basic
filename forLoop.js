@@ -22,8 +22,15 @@
 //     console.log(i);
 // }
 
-const hewan = ['kucing', 'anjing', 'burung', 'ikan', 'hamster'];
+// const hewan = ['kucing', 'anjing', 'burung', 'ikan', 'hamster'];
 
-for (let i = 0; i < hewan.length; i++) {
-    console.log(i+1, hewan[i]); 
+// for (let i = 0; i < hewan.length; i++) {
+//     console.log(i+1, hewan[i]); 
+// }
+const pilihan = 'abcd';
+for (let i = 1; i <= 10; i++) {
+    console.log(`${i}. Soal nomor ${i}:`);
+    for(let j = 0; j < pilihan.length; j++){
+        console.log(`   ${pilihan[j]}. Pilihan Jawaban`);   
+    }
 }
