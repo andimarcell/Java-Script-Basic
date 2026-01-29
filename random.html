@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulasi Keberuntungan</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+        #hasil { font-size: 24px; font-weight: bold; margin: 20px; color: blue; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Game Lempar Koin</h1>
+    <p>Klik tombol untuk melihat apakah Anda mendapatkan Gambar atau Angka.</p>
+    
+    <button onclick="mainkan()">Lempar Koin!</button>
+    
+    <div id="hasil">- Hasil akan muncul di sini -</div>
+
+    <script>
+        function mainkan() {
+            // Ini adalah logika "Random" (RNG)
+            // Math.random() menghasilkan angka antara 0 dan 1
+            let acak = Math.random();
+            let hasilDiv = document.getElementById("hasil");
+
+            if (acak < 0.5) {
+                hasilDiv.innerHTML = "Hasil: GAMBAR";
+                hasilDiv.style.color = "green";
+            } else {
+                hasilDiv.innerHTML = "Hasil: ANGKA";
+                hasilDiv.style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>
