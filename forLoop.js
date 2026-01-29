@@ -36,16 +36,36 @@
 //     }
 // }
 
-const barisPelajar = [
-    ['Andi', 'Budi', 'Citra'],
-    ['Dewi', 'Eka', 'Fajar'],
-    ['Gina', 'Hadi', 'Intan'],
-];
+// const barisPelajar = [
+//     ['Andi', 'Budi', 'Citra'],
+//     ['Dewi', 'Eka', 'Fajar'],
+//     ['Gina', 'Hadi', 'Intan'],
+// ];
 
-for (let i = 0; i < barisPelajar.length; i++) {
-    const baris = barisPelajar[i];
-    console.log(`Baris Kursi #${i + 1}`);
-    for (let j = 0; j < baris.length; j++) {
-        console.log(`   Kursi #${j + 1}: ${baris[j]}`);
+// for (let i = 0; i < barisPelajar.length; i++) {
+//     const baris = barisPelajar[i];
+//     console.log(`Baris Kursi #${i + 1}`);
+//     for (let j = 0; j < baris.length; j++) {
+//         console.log(`   Kursi #${j + 1}: ${baris[j]}`);
+//     }
+// }
+
+// let num = 0;
+// while (num < 10) {
+//     console.log(num);
+//     num++
+// }
+
+// for (let num = 0; num < 10; num++) {
+//     console.log(num);
+// }
+
+const PASSWORD = 'pass123';
+
+let guess = prompt('masukkan password:');
+while (guess !== PASSWORD) {
+    alert('password salah, coba lagi!');
+    guess = prompt('masukkan password:');
 }
-}
+
+alert('password benar, selamat datang!');
