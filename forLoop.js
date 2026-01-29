@@ -27,10 +27,25 @@
 // for (let i = 0; i < hewan.length; i++) {
 //     console.log(i+1, hewan[i]); 
 // }
-const pilihan = 'abcd';
-for (let i = 1; i <= 10; i++) {
-    console.log(`${i}. Soal nomor ${i}:`);
-    for(let j = 0; j < pilihan.length; j++){
-        console.log(`   ${pilihan[j]}. Pilihan Jawaban`);   
-    }
+
+// const pilihan = 'abcd';
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`${i}. Soal nomor ${i}:`);
+//     for(let j = 0; j < pilihan.length; j++){
+//         console.log(`   ${pilihan[j]}. Pilihan Jawaban`);   
+//     }
+// }
+
+const barisPelajar = [
+    ['Andi', 'Budi', 'Citra'],
+    ['Dewi', 'Eka', 'Fajar'],
+    ['Gina', 'Hadi', 'Intan'],
+];
+
+for (let i = 0; i < barisPelajar.length; i++) {
+    const baris = barisPelajar[i];
+    console.log(`Baris Kursi #${i + 1}`);
+    for (let j = 0; j < baris.length; j++) {
+        console.log(`   Kursi #${j + 1}: ${baris[j]}`);
+}
 }
