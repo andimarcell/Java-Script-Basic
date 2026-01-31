@@ -79,3 +79,42 @@
 //     console.log(i);
 //     if(i === 100) break;
 // }
+
+// const buahBuahan = ['pisang', 'apel', 'mangga', 'semangka', 'kiwi'];
+
+// // for (let i = 0; i < buahBuahan.length; i++) {
+// //     console.log(buahBuahan[i]);
+// // }
+
+// for (let buah of buahBuahan) {
+//     console.log(`buah ${buah}`);
+// }
+
+const barisPelajar = [
+    ['Andi', 'Budi', 'Citra'],
+    ['Dewi', 'Eka', 'Fajar'],
+    ['Gina', 'Hadi', 'Intan'],
+];
+
+// for (let i = 0; i < barisPelajar.length; i++) {
+//     const row = barisPelajar[i];
+//     console.log(`Baris Kursi #${i + 1}`);
+//     for (let j = 0; j < row.length; j++) {
+//         console.log(`   Kursi #${j + 1}: ${row[j]}`);
+//     }
+// }
+
+// for (let row of barisPelajar) {
+//     for (let student of row) {
+//         console.log(student);
+//     }
+// }
+
+for (let [i, row] of barisPelajar.entries()) {
+    console.log(`Baris Kursi #${i + 1}`);
+    // console.log(i);
+    // console.log(row);
+    for (let student of row) {
+        console.log(`   Nama: ${student}`);
+    }
+}
