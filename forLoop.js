@@ -60,12 +60,22 @@
 //     console.log(num);
 // }
 
-const PASSWORD = 'pass123';
+// const PASSWORD = 'pass123';
 
-let guess = prompt('masukkan password:');
-while (guess !== PASSWORD) {
-    alert('password salah, coba lagi!');
-    guess = prompt('masukkan password:');
-}
+// let guess = prompt('masukkan password:');
+// while (guess !== PASSWORD) {
+//     alert('password salah, coba lagi!');
+//     guess = prompt('masukkan password:');
+// }
 
-alert('password benar, selamat datang!');
+// let input = 'hey, say something';
+// while (true) {
+//     input = prompt(input);
+//     if (input.toLocaleLowerCase() === 'stop') break;
+// }
+// alert('ok');
+
+// for (let i = 0; i < 1000; i++){
+//     console.log(i);
+//     if(i === 100) break;
+// }
