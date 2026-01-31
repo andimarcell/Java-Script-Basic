@@ -90,11 +90,11 @@
 //     console.log(`buah ${buah}`);
 // }
 
-const barisPelajar = [
-    ['Andi', 'Budi', 'Citra'],
-    ['Dewi', 'Eka', 'Fajar'],
-    ['Gina', 'Hadi', 'Intan'],
-];
+// const barisPelajar = [
+//     ['Andi', 'Budi', 'Citra'],
+//     ['Dewi', 'Eka', 'Fajar'],
+//     ['Gina', 'Hadi', 'Intan'],
+// ];
 
 // for (let i = 0; i < barisPelajar.length; i++) {
 //     const row = barisPelajar[i];
@@ -110,11 +110,45 @@ const barisPelajar = [
 //     }
 // }
 
-for (let [i, row] of barisPelajar.entries()) {
-    console.log(`Baris Kursi #${i + 1}`);
-    // console.log(i);
-    // console.log(row);
-    for (let student of row) {
-        console.log(`   Nama: ${student}`);
-    }
+// for (let [i, row] of barisPelajar.entries()) {
+//     console.log(`Baris Kursi #${i + 1}`);
+//     // console.log(i);
+//     // console.log(row);
+//     for (let student of row) {
+//         console.log(`   Nama: ${student}`);
+//     }
+// }
+
+const nilaiPelajar = {
+    Olivia: 20,
+    Liam: 13,
+    Emma: 25,
+    Noah: 22,
+    Ava: 19,
+    Oliver: 16,
+    Mateo: 14,
+    Amelia: 21,
+    Elijah: 18,
+    Sophia: 17
+};
+
+// for (let pelajar in nilaiPelajar) {
+//     console.log(`${pelajar} memiliki nilai: ${nilaiPelajar[pelajar]}`);
+// }
+
+// for (let pelajar of Object.entries(nilaiPelajar)) {
+
+//     console.log(`${pelajar[0]} memiliki nilai: ${pelajar[1]}`);
+// }
+
+// for (let [nama, nilai] of Object.entries(nilaiPelajar)) {
+
+//     console.log(`${nama} memiliki nilai: ${nilai}`);
+// }
+
+let total = 0;
+let nilaiNilai = Object.values(nilaiPelajar);
+for (let nilai of nilaiNilai) {
+    total += nilai;
 }
+console.log(total / nilaiNilai.length);
