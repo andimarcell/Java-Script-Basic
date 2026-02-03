@@ -31,9 +31,22 @@
 // }
 // jumlahkan(5, 7);
 
-function jumlahkan(a, b) {
-    if(typeof a !== 'number' || typeof b !== 'number') {
-        return 'Bukan Angka';
-    }
-    return a + b;
+// function jumlahkan(a, b) {
+//     if(typeof a !== 'number' || typeof b !== 'number') {
+//         return 'Bukan Angka';
+//     }
+//     return a + b;
+// }
+
+let programming = 'JavaScript'; 
+
+function typeSafe() {
+    let programming = 'TypeScript';
+    console.log(programming);
+    // return programming;
+    // console.log(programming); // TypeScript
 }
+// console.log(programming); // JavaScript
+// typeSafe();
+typeSafe();
+console.log(programming); // JavaScript
