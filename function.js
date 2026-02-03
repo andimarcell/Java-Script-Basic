@@ -23,8 +23,17 @@
 
 // selamatPagi('andi');
 
-function jumlahkan(a = 1, b = 2) {
-    const total = a + b;
-    console.log(`hasil dari ${a} + ${b} = ${total}`);
+// function jumlahkan(a = 1, b = 2) {
+//     const total = a + b;
+//     return total;
+//     // console.log(`hasil dari ${a} + ${b} = ${total}`);
+//     console.log('selesai');
+// }
+// jumlahkan(5, 7);
+
+function jumlahkan(a, b) {
+    if(typeof a !== 'number' || typeof b !== 'number') {
+        return 'Bukan Angka';
+    }
+    return a + b;
 }
-jumlahkan(5, 7);
