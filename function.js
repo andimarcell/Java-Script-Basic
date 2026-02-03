@@ -17,8 +17,14 @@
 // nyanyi();
 // nyanyi();
 
-function selamatPagi(nama) {
-    console.log(`Halo, ${nama}! Selamat pagi!`);
-}
+// function selamatPagi(nama) {
+//     console.log(`Halo, ${nama}! Selamat pagi!`);
+// }
 
-selamatPagi('andi');
+// selamatPagi('andi');
+
+function jumlahkan(a = 1, b = 2) {
+    const total = a + b;
+    console.log(`hasil dari ${a} + ${b} = ${total}`);
+}
+jumlahkan(5, 7);
