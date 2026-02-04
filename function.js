@@ -51,15 +51,30 @@
 // typeSafe();
 // console.log(programming); // JavaScript
 
-let tinggi = 6
-if(tinggi > 5) {
-    var lebar = 10
-    // console.log(lebar);
-}
-console.log("lebar: ", lebar);
+// let tinggi = 6
+// if(tinggi > 5) {
+//     var lebar = 10
+//     // console.log(lebar);
+// }
+// console.log("lebar: ", lebar);
 
-for (let index = 0; index < 10; index++) {
-    var lebar = index;
-    // console.log(indexNumber);
-}
-console.log("lebar:", lebar)
+// for (let index = 0; index < 10; index++) {
+//     var lebar = index;
+//     // console.log(indexNumber);
+// }
+// console.log("lebar:", lebar)
+
+// function lamarKerja() {
+//     const jabatan = 'Programmer';
+
+//     function lebihDalam() {
+//         function orangDalam() {
+//             let kenalan = `Orang dalam bisa memasukkan ${jabatan}`
+//             console.log(kenalan);
+//         }
+//         orangDalam();
+//     }
+//     lebihDalam();
+// }
+
+
