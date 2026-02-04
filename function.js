@@ -82,6 +82,20 @@
 // }
 // let hasil = perpangkatan(5);
 
-const hasilPerpangkatan = function(nilai, pembanding) {
-    return nilai * pembanding;
+// const hasilPerpangkatan = function(nilai, pembanding) {
+//     return nilai * pembanding;
+// }
+
+function duaKali(func) {
+    func();
+    func();
+    func();
+    func();
+    func();
+    func();
+}
+
+function lemparDadu() {
+    const hasil = Math.floor(Math.random() * 6) + 1;
+    console.log(hasil);
 }
