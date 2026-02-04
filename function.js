@@ -38,15 +38,28 @@
 //     return a + b;
 // }
 
-let programming = 'JavaScript'; 
+// let programming = 'JavaScript'; 
 
-function typeSafe() {
-    let programming = 'TypeScript';
-    console.log(programming);
-    // return programming;
-    // console.log(programming); // TypeScript
-}
-// console.log(programming); // JavaScript
+// function typeSafe() {
+//     let programming = 'TypeScript';
+//     console.log(programming);
+//     // return programming;
+//     // console.log(programming); // TypeScript
+// }
+// // console.log(programming); // JavaScript
+// // typeSafe();
 // typeSafe();
-typeSafe();
-console.log(programming); // JavaScript
+// console.log(programming); // JavaScript
+
+let tinggi = 6
+if(tinggi > 5) {
+    var lebar = 10
+    // console.log(lebar);
+}
+console.log("lebar: ", lebar);
+
+for (let index = 0; index < 10; index++) {
+    var lebar = index;
+    // console.log(indexNumber);
+}
+console.log("lebar:", lebar)
