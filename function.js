@@ -100,15 +100,26 @@
 //     console.log(hasil);
 // }
 
-function hasilnyaAdalahFunction() {
-    const rand = Math.random();
-    if(rand > 0.10) {
-        return function() {
-            console.log('Berhasil!');
-        };
-    } else {
-        return function() {
-            console.log('Gagal!');
-        };
-    } 
+// function hasilnyaAdalahFunction() {
+//     const rand = Math.random();
+//     if(rand > 0.10) {
+//         return function() {
+//             console.log('Berhasil!');
+//         };
+//     } else {
+//         return function() {
+//             console.log('Gagal!');
+//         };
+//     } 
+// }
+
+function myFun() {
+    console.log('Hello from myFun!');
+    return 'Hello World';
+}
+
+const myMath = {
+    perkalian: function(x, y) {
+        return x * y;
+    },
 }
