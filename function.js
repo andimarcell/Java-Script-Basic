@@ -123,20 +123,36 @@
 //         return x * y;
 //     },
 // }
-let nama = 'Budi';
-let hobi = 'bersepeda';
-const saya = {
-    nama : nama,
-    hobi : hobi,
-    perkenalan: function() {
-        // return `Halo, nama saya ${nama}, dan saya suka ${hobi}.`;
-        console.log(`Halo, nama saya ${this.nama}, dan saya suka ${this.hobi}.`);
-    }
-};
-saya.perkenalan();
+// let nama = 'Budi';
+// let hobi = 'bersepeda';
+// const saya = {
+//     nama : nama,
+//     hobi : hobi,
+//     perkenalan: function() {
+//         // return `Halo, nama saya ${nama}, dan saya suka ${hobi}.`;
+//         console.log(`Halo, nama saya ${this.nama}, dan saya suka ${this.hobi}.`);
+//     }
+// };
 // const sayHi = User.sayHi();
 // sayHi();
 // const user = {
 //     nama: 'Alice',
 //     console.log(`Hi, saya ${this.nama}`);
 // }
+
+// try {
+//     saya.kenalan();
+// } catch {
+//     console.log('Terjadi kesalahan ');
+// }
+// // SafeArray.kenalan();
+// console.log('Program tetap berjalan');
+
+function teriak(msg) {
+    try {
+        console.log(msg.toUpperCase());
+    } catch (error) {
+        console.log(error)
+        console.log(`Silahkan masukkan tipe data string pada argument teriak()`)
+    }
+}
