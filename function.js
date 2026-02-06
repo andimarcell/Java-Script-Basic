@@ -113,13 +113,30 @@
 //     } 
 // }
 
-function myFun() {
-    console.log('Hello from myFun!');
-    return 'Hello World';
-}
+// function myFun() {
+//     console.log('Hello from myFun!');
+//     return 'Hello World';
+// }
 
-const myMath = {
-    perkalian: function(x, y) {
-        return x * y;
-    },
-}
+// const myMath = {
+//     perkalian: function(x, y) {
+//         return x * y;
+//     },
+// }
+let nama = 'Budi';
+let hobi = 'bersepeda';
+const saya = {
+    nama : nama,
+    hobi : hobi,
+    perkenalan: function() {
+        // return `Halo, nama saya ${nama}, dan saya suka ${hobi}.`;
+        console.log(`Halo, nama saya ${this.nama}, dan saya suka ${this.hobi}.`);
+    }
+};
+saya.perkenalan();
+// const sayHi = User.sayHi();
+// sayHi();
+// const user = {
+//     nama: 'Alice',
+//     console.log(`Hi, saya ${this.nama}`);
+// }
