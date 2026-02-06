@@ -86,16 +86,29 @@
 //     return nilai * pembanding;
 // }
 
-function duaKali(func) {
-    func();
-    func();
-    func();
-    func();
-    func();
-    func();
-}
+// function duaKali(func) {
+//     func();
+//     func();
+//     func();
+//     func();
+//     func();
+//     func();
+// }
 
-function lemparDadu() {
-    const hasil = Math.floor(Math.random() * 6) + 1;
-    console.log(hasil);
+// function lemparDadu() {
+//     const hasil = Math.floor(Math.random() * 6) + 1;
+//     console.log(hasil);
+// }
+
+function hasilnyaAdalahFunction() {
+    const rand = Math.random();
+    if(rand > 0.10) {
+        return function() {
+            console.log('Berhasil!');
+        };
+    } else {
+        return function() {
+            console.log('Gagal!');
+        };
+    } 
 }
