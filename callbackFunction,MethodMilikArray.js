@@ -82,9 +82,8 @@
 
 const perpangkatan = (x => x * x);
 
-const random = () => {
-    const hasil = ~~(Math.random() * 1000);
-    console.log(hasil);
-  
-}
+const random = () => (
+    ~~(Math.random() * 1000)
+);
 
+const add = (a,b) => a + b;
