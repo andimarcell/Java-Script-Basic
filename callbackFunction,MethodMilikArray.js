@@ -1,7 +1,14 @@
-// const angka = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const angka = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 // const angkaDouble = angka.map(function(num) {
 //     return num * 2;
 // });
+const angkaGanjil = angka.filter((n) => {
+    return n % 2 === 1;
+});
+
+const angkaBaru = angka.filter((n) => {
+    return n < 5;
+});
 
 // const angkaMap = angka.map(function(number) {
 //     // if(number * 2 === 0) {
@@ -17,26 +24,44 @@
 
 // angka.forEach(print);
 
-// const animes = [
-//     {
-//         title: 'Attack on Titan',
-//         rating: 91,
+const animes = [
+    {
+        title: 'Attack on Titan',
+        rating: 91,
+        year: 2013,
+    },
+    {
+        title: 'Fullmetal Alchemist: Brotherhood',
+        rating: 96,
+        year: 2009,
+    },
+    {
+        title: 'Death Note',
+        rating: 85,
+        year: 2006,
+    },
+    {
+        title: 'Naruto',
+        rating: 79,
+        year: 2002,
+    }
+];
 
-//     },
-//     {
-//         title: 'Fullmetal Alchemist: Brotherhood',
-//         rating: 96,
-//     },
-//     {
-//         title: 'Death Note',
-//         rating: 85,
-//     },
-//     {
-//         title: 'Naruto',
-//         rating: 79,
-//     }
-// ];
-
+const animeBagus = animes.filter((n) => {
+    return n.rating >= 85;
+});
+const judulAnimeBagus = animeBagus.map((n) => {
+    return n.title;
+});
+const judulAnimeBagus2 = animes.filter(n => {
+    return n.rating >= 85}).map(n => {
+        return n.title});
+const animeCukupBagus = animes.filter((n) => {
+    return n.rating < 85;
+});
+const animeBaru = animes.filter((n) => {
+    return n.year > 2010
+});
 // animes.forEach(function(anime) {
 //     console.log(`${anime.title} - Rating: ${anime.rating}/100`);
 // });
@@ -97,6 +122,7 @@
 // }, 5000);
 // console.log('saya pergi ya...');
 
-const interval = setInterval(() => {
-    console.log(~~(Math.random() * 1000));
-}, 2000);
+// const interval = setInterval(() => {
+//     console.log(~~(Math.random() * 1000));
+// }, 2000);
+
