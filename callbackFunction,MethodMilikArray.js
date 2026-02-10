@@ -80,10 +80,23 @@
 //     return x * x;
 // }
 
-const perpangkatan = (x => x * x);
+// const perpangkatan = (x => x * x);
 
-const random = () => (
-    ~~(Math.random() * 1000)
-);
+// // const random = () => {
+// //     return ~~(Math.random() * 1000);
+// // };
+// const random = () => (
+//     ~~(Math.random() * 1000)
+// );
 
-const add = (a,b) => a + b;
+// const add = (a,b) => a + b;
+
+// console.log('Halo...');
+// setTimeout(() => {
+// console.log('masih di sana ga?');
+// }, 5000);
+// console.log('saya pergi ya...');
+
+const interval = setInterval(() => {
+    console.log(~~(Math.random() * 1000));
+}, 2000);
