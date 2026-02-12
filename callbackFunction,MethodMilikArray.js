@@ -31,14 +31,14 @@ const animes = [
         year: 2013,
     },
     {
-        title: 'Fullmetal Alchemist: Brotherhood',
-        rating: 96,
-        year: 2009,
-    },
-    {
         title: 'Death Note',
         rating: 85,
         year: 2006,
+    },
+    {
+        title: 'Fullmetal Alchemist: Brotherhood',
+        rating: 96,
+        year: 2009,
     },
     {
         title: 'Naruto',
@@ -65,6 +65,21 @@ const animes = [
 
 const isAnimeListNew = animes.some((anime) => anime.year > 2010);
 const isRatingGood = animes.every((anime) => anime.rating >= 75);
+
+const bestAnime = animes.reduce((bestAnime, currAnime) => {
+    if(currAnime.rating > bestAnime.rating) {
+        return currAnime;
+    }
+    return bestAnime;
+});
+
+const lowAnime = animes.reduce((lowAnime, currAnime) => {
+    console.log(lowAnime, currAnime);
+    if(currAnime.rating < lowAnime.rating) {
+        return currAnime;
+    }
+    return lowAnime;
+});
 // animes.forEach(function(anime) {
 //     console.log(`${anime.title} - Rating: ${anime.rating}/100`);
 // });
@@ -132,3 +147,12 @@ const isRatingGood = animes.every((anime) => anime.rating >= 75);
 const examScore = [80, 85, 90, 74, 88, 95, 100];
 const isGraduate = examScore.every((score) => score >= 75);
 const isAnyPerfect = examScore.some((score) => score === 100);
+
+// let total = 0;
+// for( let score of examScore) {
+//     total += score;
+// }
+
+const total = examScore.reduce((total, score) => {
+    return total + score;
+});
