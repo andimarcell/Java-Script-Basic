@@ -47,21 +47,24 @@ const animes = [
     }
 ];
 
-const animeBagus = animes.filter((n) => {
-    return n.rating >= 85;
-});
-const judulAnimeBagus = animeBagus.map((n) => {
-    return n.title;
-});
-const judulAnimeBagus2 = animes.filter(n => {
-    return n.rating >= 85}).map(n => {
-        return n.title});
-const animeCukupBagus = animes.filter((n) => {
-    return n.rating < 85;
-});
-const animeBaru = animes.filter((n) => {
-    return n.year > 2010
-});
+// const animeBagus = animes.filter((n) => {
+//     return n.rating >= 85;
+// });
+// const judulAnimeBagus = animeBagus.map((n) => {
+//     return n.title;
+// });
+// const judulAnimeBagus2 = animes.filter(n => {
+//     return n.rating >= 85}).map(n => {
+//         return n.title});
+// const animeCukupBagus = animes.filter((n) => {
+//     return n.rating < 85;
+// });
+// const animeBaru = animes.filter((n) => {
+//     return n.year > 2010
+// });
+
+const isAnimeListNew = animes.some((anime) => anime.year > 2010);
+const isRatingGood = animes.every((anime) => anime.rating >= 75);
 // animes.forEach(function(anime) {
 //     console.log(`${anime.title} - Rating: ${anime.rating}/100`);
 // });
@@ -126,3 +129,6 @@ const animeBaru = animes.filter((n) => {
 //     console.log(~~(Math.random() * 1000));
 // }, 2000);
 
+const examScore = [80, 85, 90, 74, 88, 95, 100];
+const isGraduate = examScore.every((score) => score >= 75);
+const isAnyPerfect = examScore.some((score) => score === 100);
