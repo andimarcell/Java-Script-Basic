@@ -156,3 +156,18 @@ const isAnyPerfect = examScore.some((score) => score === 100);
 const total = examScore.reduce((total, score) => {
     return total + score;
 });
+
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    fullName: function () {
+        console.log(this);
+        return `${this.firstName} ${this.lastName}`;
+    },
+    panggilNanti: function() {
+        setTimeout(() => {
+            console.log(this);
+            console.log(this.fullName());
+        }, 3000);
+},
+};
