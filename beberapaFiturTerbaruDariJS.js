@@ -45,6 +45,47 @@ const summAll = (...num) => num.reduce((a, b) => a + b);
 const user = {
     nama: 'Andi',
     email: 'andi@example.com',
+    role: 'admin',
 };
 
-const {nama: name, email, phone = "082250123563"} = user;
+// const {nama: name, email, phone = "082250123563"} = user;
+
+const userAndRole = ({nama, role}) => {
+    return `${nama} ${role}`;
+}
+
+const animes = [
+    {
+        title: 'Attack on Titan',
+        rating: 91,
+        year: 2013,
+    },
+    {
+        title: 'Death Note',
+        rating: 85,
+        year: 2006,
+    },
+    {
+        title: 'Fullmetal Alchemist: Brotherhood',
+        rating: 96,
+        year: 2009,
+    },
+    {
+        title: 'Naruto',
+        rating: 79,
+        year: 2002,
+    }
+];
+
+const anime = animes.map(({title, year, rating}) => {
+    return `${title} (${year}) - Rating: ${rating}`;
+})
+
+const semuaJudul = animes.map(({title}) => title);
+
+const semuaRating = animes.map(({rating}) => rating);
+
+const semuaTahun = animes.map(({year}) => year);
+
+console.log(animes[0].title);
+console.log(animes[0].rating);
