@@ -14,3 +14,13 @@ const nama = ['Andi', 'Budi', 'Caca', 'Dedi', 'Eka'];
 
 
 const campuran = [...angka, 0, 'a', 'b'];
+
+const user = {
+    nama: 'Andi',
+    email: 'andi@example.com',
+};
+const credential = {
+    password: 'rahasia',
+    token: 'abc123',
+};
+const userBaru = {...user, ...credential};
