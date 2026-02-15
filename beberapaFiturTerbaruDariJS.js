@@ -15,15 +15,15 @@ const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const campuran = [...angka, 0, 'a', 'b'];
 
-const user = {
-    nama: 'Andi',
-    email: 'andi@example.com',
-};
+// const user = {
+//     nama: 'Andi',
+//     email: 'andi@example.com',
+// };
 const credential = {
     password: 'rahasia',
     token: 'abc123',
 };
-const userBaru = {...user, ...credential};
+// const userBaru = {...user, ...credential};
 
 // const summAll = (num) => {
 //     return num.reduce((total, el) => total + el)
@@ -31,7 +31,7 @@ const userBaru = {...user, ...credential};
 
 const summAll = (...num) => num.reduce((a, b) => a + b);
 
-const nama = ['Andi', 'Budi', 'Caca', 'Dedi', 'Eka', 'Feri', 'Gina', 'Hadi', 'Ika', 'Joko'];
+// const nama = ['Andi', 'Budi', 'Caca', 'Dedi', 'Eka', 'Feri', 'Gina', 'Hadi', 'Ika', 'Joko'];
 
 // const pemenang = (gold, silver, bronze, ...sisa) => {
 //     console.log(`Medali emas: ${gold}`);
@@ -40,4 +40,11 @@ const nama = ['Andi', 'Budi', 'Caca', 'Dedi', 'Eka', 'Feri', 'Gina', 'Hadi', 'Ik
 //     console.log(`Peserta Lainnya: ${sisa}`);
 // };
 
-const [gold, silver, bronze, ...peserta] = nama;
+// const [gold, silver, bronze, ...peserta] = nama;
+
+const user = {
+    nama: 'Andi',
+    email: 'andi@example.com',
+};
+
+const {nama: name, email, phone = "082250123563"} = user;
